@@ -11,8 +11,10 @@
 
 <body>
     <nav class="navbar bg-dark text-white">
-        <span class="navbar-brand mb-0 h1" id="weatherheading">Weather Dashboard</span>
-      </nav>
+        <span class="navbar-brand mb-0 h1" id="weatherheading">
+            <h1>Weather Dashboard</h1>
+        </span>
+    </nav>
     <div class="container pt-3">
         <div class="row mt-5">
             <div class="col-md">
@@ -22,38 +24,25 @@
                             <div class="form-group">
                                 <label for="search-input">Search for a city</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="search-input" placeholder="e.g. San Francisco">
+                                    <input type="text" class="form-control" id="search-input" placeholder="e.g. London">
                                     <div class="input-group-append">
                                         <button class="btn btn btn-secondary btn-block" type="submit">Search</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                        <h2 class="card-title h4">Cities</h2>
-                        <h3 class="card-subtitle h6 font-weight-normal mb-3 text-muted">Click on a city to view the weather</h3>
-                        <button data-city="San Diego" class="city btn btn btn-secondary btn-block">
-                            San Diego
-                        </button>
-                        <button data-city="Tijuana" class="city btn btn btn-secondary btn-block">
-                            Tijuana
-                        </button>
-                        <button data-city="Seattle" class="city btn btn btn-secondary btn-block">
-                            Seattle
-                        </button>
-                        <button data-city="Las Vegas" class="city btn btn btn-secondary btn-block">
-                            Las Vegas
-                        </button>
-                        <button data-city="Richmond" class="city btn btn btn-secondary btn-block">
-                            Richmond
-                        </button>
-                        <hr>
+                        <div class="card">
+                            <ul class="list-group text-dark" id="search-history">
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card weather-card bg-dark text-white">
                     <div class="card-body">
-                        <h2 id="city-name" class="card-title h4">Choose City</h2>
+                        <h2 id="city-name" class="card-title h4">Search for a City</h2>
                         <hr class="border-top border-light">
                         <div id="weather-icon"></div>
                         <p class="card-text">Current Temp (F): <span id="temp">-</span></p>
